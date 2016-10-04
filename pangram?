@@ -1,0 +1,6 @@
+input = gets.downcase()
+
+def pangram?(sentence)
+  unused_letters = ('a'..'z').to_a - sentence.chars.to_a
+  unused_letters.empty? ? "pangram":"not pangram"
+end
